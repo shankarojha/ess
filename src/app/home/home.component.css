@@ -1,0 +1,77 @@
+.container{
+    margin-top: 20px;
+}
+
+h2{
+    font-size: 3em;
+    font-weight: 800;
+}
+.paragraph-custom{
+    font-size: 2em;
+}
+
+.banner{
+    position: relative;
+    background: url('../../assets/nodepricationmongodb.png');
+    height: 80vh;
+    background-size: cover;
+    background-position: center;
+    padding: 250px 0 200px;
+}
+
+.carousel-custom{
+    box-shadow: 2px 15px 10px rgb(95, 95, 95);
+    padding: 2px;
+}
+
+.car-item1-custom{
+    
+    background:coral;
+}
+
+.carousel-text{
+    z-index: 2;
+    position: relative;
+    font-weight: 800;
+    font-size: 3em;
+    margin-top: 50%;
+    padding: 20px;
+}
+
+
+@media only screen and (max-width:576px) {
+    .carousel-text{
+        font-size: 1em;
+        margin-top: 70%; 
+    }
+
+    .carouselButton{
+        font-size: 1em;
+    }
+
+    h2{
+        font-size: 2em;
+        font-weight: 800;
+    }
+    .paragraph-custom{
+        font-size: 1em;
+    }
+  }
+
+@media only screen and (min-width:577px) and (max-width:768px){
+    .carousel-text{
+        font-size:1em;
+        margin-top: 50%; 
+    }
+    .carouselButton{
+        font-size: 1em;
+    }
+
+    h2{
+        font-size: 2em;
+        font-weight: 800;
+    }
+    .paragraph-custom{
+        font-size: 1em;
+    }
+}
