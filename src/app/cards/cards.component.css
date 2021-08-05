@@ -7,3 +7,7 @@
     border:1px solid black;
     box-shadow: 2px 15px 10px rgb(95, 95, 95);
 }
+
+.card-body{
+    background:none;
+}

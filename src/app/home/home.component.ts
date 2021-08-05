@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ContentsService } from '../contents.service';
+import  AOS  from "aos";
 
 @Component({
   selector: 'app-home',
@@ -13,6 +14,7 @@ export class HomeComponent implements OnInit {
   public team
 
   ngOnInit(): void {
+    AOS.init()
     this.getWhoWeAre()
     this.getTeam()
   }

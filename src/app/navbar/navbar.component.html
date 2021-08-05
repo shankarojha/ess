@@ -16,7 +16,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-lg-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#"
+          <a class="nav-link" routerLink="home"
             >Home <span class="sr-only">(current)</span></a
           >
         </li>
@@ -33,30 +33,31 @@
             Services
           </a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Integreted security</a>
+            <a class="dropdown-item" routerLink="/services/integratedsecurity">Integreted security</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Facility management</a>
+            <a class="dropdown-item" routerLink="/services/facilitymanagement">Facility management</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Supply chain</a>
+            <a class="dropdown-item" routerLink="/services/supplychain">Supply chain</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Payload management</a>
+            <a class="dropdown-item" routerLink="/services/payloadmanagement">Payload management</a>
             <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Training</a>
+            <a class="dropdown-item" routerLink="/services/training">Training</a>
           </div>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Gallery</a>
+          <a class="nav-link" routerLink="/home/gallery">Gallery</a>
         </li>
         <li class="nav-item active">
-            <a class="nav-link" href="#">Careers</a>
+            <a class="nav-link" routerLink="/home/careers">Careers</a>
           </li>
         <li class="nav-item active">
           <a class="nav-link" href="#">About Us</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" routerLink="/home/contact">Contact</a>
         </li>
       </ul>
     </div>
   </nav>
 </div>
+<router-outlet></router-outlet>

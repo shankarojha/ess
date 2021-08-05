@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+h2{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}
+
+h5{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+}

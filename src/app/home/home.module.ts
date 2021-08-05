@@ -3,15 +3,18 @@ import { CommonModule } from '@angular/common';
 
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
-import { NavbarComponent } from '../navbar/navbar.component';
-import { CardsComponent } from '../cards/cards.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { CareersComponent } from './careers/careers.component';
+import { ContactComponent } from './contact/contact.component';
+import { SharedModule } from '../shared/shared.module';
 
 
 @NgModule({
-  declarations: [HomeComponent, NavbarComponent, CardsComponent],
+  declarations: [HomeComponent, GalleryComponent, CareersComponent, ContactComponent],
   imports: [
     CommonModule,
-    HomeRoutingModule
+    HomeRoutingModule,
+    SharedModule
   ]
 })
 export class HomeModule { }
