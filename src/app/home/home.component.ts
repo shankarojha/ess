@@ -15,7 +15,6 @@ export class HomeComponent implements OnInit {
   public whoWeAre
   public team
   public navbarHeight
-
   constructor(private contentsService : ContentsService) {}
 
   ngOnInit(): void {
@@ -32,7 +31,7 @@ export class HomeComponent implements OnInit {
 }
   
   @HostListener("window:scroll", ['$event']) scrollFunction(){
-    if(document.documentElement.scrollTop>=this.windowHeight-this.navbarHeight){
+    if(document.documentElement.scrollTop>this.windowHeight-this.navbarHeight){
       this.navFix=true
     }else{
       this.navFix=false

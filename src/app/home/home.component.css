@@ -37,6 +37,16 @@ h2{
     width: 100vw;
 }
 
+#whoweare{
+    background: rgb(15, 113, 226);
+    color: rgb(255, 255, 255);
+    padding: 80px;
+}
+
+.strongText{
+    margin-bottom: 15px;
+}
+
 
 
 
