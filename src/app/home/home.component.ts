@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
 import { ContentsService } from '../contents.service';
 import  AOS  from "aos";
+
 
 @Component({
   selector: 'app-home',
@@ -8,15 +9,34 @@ import  AOS  from "aos";
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  constructor(private contentsService : ContentsService) {}
 
+  public windowHeight= window.innerHeight
+  public navFix=false;
   public whoWeAre
   public team
+  public navbarHeight
+
+  constructor(private contentsService : ContentsService) {}
 
   ngOnInit(): void {
     AOS.init()
     this.getWhoWeAre()
     this.getTeam()
+    this.getNavbarHeight()
+    console.log(this.windowHeight)
+    console.log(this.navbarHeight)
+  }
+
+  getNavbarHeight(){
+    this.navbarHeight=document.getElementById("navbarBottom").offsetHeight;
+}
+  
+  @HostListener("window:scroll", ['$event']) scrollFunction(){
+    if(document.documentElement.scrollTop>=this.windowHeight-this.navbarHeight){
+      this.navFix=true
+    }else{
+      this.navFix=false
+    }
   }
 
   getWhoWeAre():any{

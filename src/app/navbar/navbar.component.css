@@ -1,17 +1,39 @@
 .navbar{
-    padding: 20px 0;
     z-index: 10;
+    height: 10vh;
+    padding: 20px;
 }
 
 .navbar-brand{
     font-weight: 800;
     font-size: 3em;
     color: rgb(2, 0, 112);
+    padding: 10px;
 }
 
 .nav-item{
     font-weight: 800;
     margin-left: 18px;
     margin-right: 18px;
+    padding: 10px;  
 }
 
+
+
+@media only screen and (max-width:576px) {
+    .navbar-collapse{
+        background: rgb(155, 219, 248);
+    }
+    .navbar-brand{
+        font-size: 2em; 
+    }
+  }
+
+@media only screen and (min-width:577px) and (max-width:768px){
+    .navbar-collapse{
+        background: rgb(155, 219, 248);
+    }
+    .navbar-brand{
+        font-size: 2em; 
+    }
+}
