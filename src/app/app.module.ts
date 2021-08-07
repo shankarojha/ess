@@ -5,9 +5,10 @@ import { AppComponent } from './app.component';
 import { ContentsService } from './contents.service';
 
 
+
 @NgModule({
   declarations: [
-    AppComponent,
+    AppComponent
   ],
   imports: [
     BrowserModule,

@@ -15,6 +15,9 @@ export class HomeComponent implements OnInit {
   public whoWeAre
   public team
   public navbarHeight
+  public counterNumber
+  public ourServices
+
   constructor(private contentsService : ContentsService) {}
 
   ngOnInit(): void {
@@ -22,8 +25,10 @@ export class HomeComponent implements OnInit {
     this.getWhoWeAre()
     this.getTeam()
     this.getNavbarHeight()
+    this.getOurServices()
     console.log(this.windowHeight)
     console.log(this.navbarHeight)
+    console.log(this.ourServices)
   }
 
   getNavbarHeight(){
@@ -44,5 +49,9 @@ export class HomeComponent implements OnInit {
 
   getTeam():any{
     this.team = this.contentsService.getTeam()
+  }
+
+  getOurServices():any{
+    this.ourServices = this.contentsService.getOurServices()
   }
 }

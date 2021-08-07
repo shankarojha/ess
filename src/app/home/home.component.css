@@ -14,6 +14,13 @@ h2{
     padding: 2px;
 }
 
+.carousel-indicators > li {
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    background-color: #404040;
+  }
+
 .car-item1-custom{
     background:coral;
     height: 90vh;

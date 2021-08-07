@@ -156,25 +156,10 @@
   <!--banner-->
   <div class="container-fluid" id="whoweare">
     <div class="row">
-      <div class="col-md-3 text-center">
-        <img src="../../assets/icons8-location-80.png" />
-        <h2>Sites</h2>
-        <h1>3000+</h1>
-      </div>
-      <div class="col-md-3 text-center">
-        <img src="../../assets/icons8-business-building-80.png" />
-        <h2>Clients</h2>
-        <h1>3000+</h1>
-      </div>
-      <div class="col-md-3 text-center">
-        <img src="../../assets/icons8-merge-git-80.png" />
-        <h2>Branches</h2>
-        <h1>3000+</h1>
-      </div>
-      <div class="col-md-3 text-center">
-        <img src="../../assets//icons8-police-officer-80.png" />
-        <h2>Employees</h2>
-        <h1>3000+</h1>
+      <div *ngFor="let item of whoWeAre" class="col-md-3 text-center">
+        <img src="{{item.iconSrc}}" />
+        <h2>{{item.type}}</h2>
+        <h1 data-aos="fade-up" data-aos-duration="1000" [appCounterAnimation]="item.projectedNumber" ></h1>
       </div>
     </div>
   </div>
@@ -187,7 +172,7 @@
         <h2 class="text-left" data-aos="fade-up" data-aos-duration="1000">
           What we do
         </h2>
-        <div class="row">
+        <div *ngFor="let item of ourServices" class="row">
           <div class="col-4">
             <img src="../../assets/icons8-merge-git-80.png" />
           </div>
@@ -198,71 +183,12 @@
               data-aos-duration="1000"
               data-aos-delay="1000"
             >
-              <strong>Integrated Security</strong><br /><br/> ipsum dolor sit amet
-              consectetur, adipisicing elit. Inventore magni, consectetur vero
-              sint facilis ratione, corrupti quis reprehenderit, dolorem
-              quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea
-              minus.
+              <strong>{{item.service}}</strong><br />
+              {{item.details}}
             </p>
           </div>
         </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="../../assets/icons8-merge-git-80.png" />
-          </div>
-          <div class="col-8">
-            <p
-              class="paragraph-custom text-left"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-            >
-              <strong>Facility Management</strong><br /><br/>Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Inventore magni, consectetur vero
-              sint facilis ratione, corrupti quis reprehenderit, dolorem
-              quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea
-              minus.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="../../assets/icons8-merge-git-80.png" />
-          </div>
-          <div class="col-8">
-            <p
-              class="paragraph-custom text-left"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-            >
-              <strong>Supply Chain</strong><br /><br/>Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Inventore magni, consectetur vero
-              sint facilis ratione, corrupti quis reprehenderit, dolorem
-              quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea
-              minus.
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-4">
-            <img src="../../assets/icons8-merge-git-80.png" />
-          </div>
-          <div class="col-8">
-            <p
-              class="paragraph-custom text-left"
-              data-aos="fade-up"
-              data-aos-duration="1000"
-              data-aos-delay="500"
-            >
-              <strong>Training</strong><br /><br/>Lorem ipsum dolor sit amet
-              consectetur, adipisicing elit. Inventore magni, consectetur vero
-              sint facilis ratione, corrupti quis reprehenderit, dolorem
-              quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea
-              minus.
-            </p>
-          </div>
-        </div>
+        
       </div>
       <div class="col-md-6">
         <img src="#" alt="image" />
