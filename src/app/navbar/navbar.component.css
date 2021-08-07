@@ -1,7 +1,6 @@
 .navbar{
     z-index: 10;
     height: 10vh;
-    padding: 20px;
 }
 
 .navbar-brand{
@@ -21,6 +20,7 @@
 
 
 @media only screen and (max-width:576px) {
+    
     .navbar-collapse{
         background: rgb(155, 219, 248);
     }
@@ -35,5 +35,8 @@
     }
     .navbar-brand{
         font-size: 2em; 
+    }
+    .navbar{
+        padding: 40px 0 0 0;
     }
 }
