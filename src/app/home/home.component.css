@@ -58,6 +58,22 @@ h2{
     background: rgb(200, 198, 198);
 }
 
+#form-col{
+    background:black;
+    color:white;
+}
+
+.fa-car{
+    color: blanchedalmond;
+}
+
+.form-group{
+    font-size: 1.5em;
+}
+
+#icon-whatwedo{
+    height: 10vh;
+}
 
 
 
@@ -77,6 +93,9 @@ h2{
     .paragraph-custom{
         font-size: 1em;
     }
+    .form-group{
+        font-size: 1em;
+    }
   }
 
 @media only screen and (min-width:577px) and (max-width:768px){
@@ -92,6 +111,9 @@ h2{
         font-weight: 800;
     }
     .paragraph-custom{
+        font-size: 1em;
+    }
+    .form-group{
         font-size: 1em;
     }
 }

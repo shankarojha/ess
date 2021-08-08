@@ -58,19 +58,23 @@ export class ContentsService {
     let services = [
       {
         service:"Integrated Security",
-        details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus."
+        details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus.",
+        icon:"../../assets/icons8-delete-shield.gif"
        },
        {
         service:"Facility Management",
-        details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus."
+        details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus.",
+        icon:"../../assets/icons8-vacuuming-100.png"
        },
        {
         service:"Supply Chain",
-        details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus."
+        details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus.",
+        icon:"../../assets/icons8-truck-weight-max-loading-100.png"
        },
        {
         service:"Training",
-        details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus."
+        details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus.",
+        icon:"../../assets/icons8-training-100.png"
        }
     ]
     return services

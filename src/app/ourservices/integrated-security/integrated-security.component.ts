@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContentsService } from 'src/app/contents.service';
 
 @Component({
   selector: 'app-integrated-security',
@@ -7,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class IntegratedSecurityComponent implements OnInit {
 
-  constructor() { }
+  public ourServices
+  constructor(private contentsService: ContentsService) { }
 
   ngOnInit(): void {
+    this.getOurServices()
   }
 
+  getOurServices():any{
+    this.ourServices = this.contentsService.getOurServices()
+  }
 }

@@ -178,14 +178,14 @@
           </h2>
         <div *ngFor="let item of ourServices" class="row">
           <div class="col-4">
-            <img src="../../assets/icons8-merge-git-80.png" />
+            <img id="icon-whatwedo" src="{{item.icon}}">
           </div>
           <div class="col-8">
             <p
               class="paragraph-custom text-left"
               data-aos="fade-up"
               data-aos-duration="1000"
-              data-aos-delay="1000"
+              data-aos-delay="500"
             >
               <strong>{{ item.service }}</strong
               ><br />
@@ -293,10 +293,10 @@
   </section>
   <!--carousel-cards ends-->
 
-  <div class="container text-center pt-5 pb-5">
+  <div class="container pt-5 pb-5">
     <div class="row">
       <div class="col-12">
-        <h2>Team</h2>
+        <h2>Portfolio</h2>
         <p class="paragraph-custom">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
           magni, consectetur vero sint facilis ratione, corrupti quis
@@ -307,43 +307,7 @@
     </div>
   </div>
 
-  <!-- team cards-->
-  <div class="container-fluid pt-5 pb-5">
-    <div class="row">
-      <div
-        class="col-md-6 col-lg-4 d-flex justify-content-center"
-        *ngFor="let team of team"
-      >
-        <app-cards
-          data-aos="flip-right"
-          data-aos-duration="1000"
-          class="pt-2 pb-2"
-        >
-          <h5 class="card-title">{{ team.name }}</h5>
-          <p class="card-text">
-            {{ team.details }}
-          </p>
-        </app-cards>
-      </div>
-    </div>
-  </div>
-  <!--Team cards ends-->
-
-  <div class="container text-center pt-5 pb-5">
-    <div class="row">
-      <div class="col-12">
-        <h2>Industries we serve</h2>
-        <p class="paragraph-custom">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-          magni, consectetur vero sint facilis ratione, corrupti quis
-          reprehenderit, dolorem quibusdam modi iste dolores magnam officiis!
-          Saepe unde beatae ea minus.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <div class="container text-center pt-5 pb-5">
+  <div class="container pt-5 pb-5">
     <div class="row">
       <div class="col-12">
         <h2>Clientele</h2>
@@ -356,17 +320,25 @@
       </div>
     </div>
   </div>
-
-  <div class="container text-center pt-5 pb-5">
+  <div class="container pt-5 pb-5">
     <div class="row">
-      <div class="col-12">
-        <h2>Client Says</h2>
-        <p class="paragraph-custom">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore
-          magni, consectetur vero sint facilis ratione, corrupti quis
-          reprehenderit, dolorem quibusdam modi iste dolores magnam officiis!
-          Saepe unde beatae ea minus.
-        </p>
+      <div class="col-6" id= "form-col">
+        <form class="pt-5 pb-5">
+          <div class="form-group">
+            <label for="name">Name <i class="fa fa-user"></i></label>
+            <input class="form-control" type="text" placeholder="">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address <i class="fa fa-envelope"></i></label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Message <i class="fa fa-comment"></i></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
     </div>
   </div>
