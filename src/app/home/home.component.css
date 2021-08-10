@@ -8,8 +8,15 @@ h2{
     font-size: 1.5em;
 }
 
-.carousel-inner{
+.car-inner-custom{
     position: relative;
+    background: rgb(0, 0, 0);
+}
+
+.car-image{
+    z-index: 2;
+    height: 90vh;
+    opacity: 0.7;
 }
 
 
@@ -21,13 +28,17 @@ h2{
   }
 
 .car-item1-custom{
-    background:coral;
     height: 90vh;
     z-index: 10;
 }
 
+.carousel-text-col{
+    z-index: 10;
+}
+
 .carousel-text{
-    z-index: 2;
+    color: rgb(255, 255, 255);
+    z-index: 10;
     position: absolute;
     font-weight: 800;
     font-size: 4em;
@@ -94,6 +105,10 @@ h2{
         width: 100%;
         z-index: 20;
     }
+
+    #whatwedo-image{
+        max-width: 90vw;
+    }
   }
 
 @media only screen and (min-width:577px) and (max-width:992px){
@@ -118,5 +133,8 @@ h2{
         position: fixed;
         width: 100%;
         z-index: 20;
+    }
+    #whatwedo-image{
+        max-width: 90vw;
     }
 }

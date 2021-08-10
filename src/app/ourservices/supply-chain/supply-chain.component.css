@@ -11,6 +11,11 @@
     margin:0px;
     padding: 0px;
   }
+
+  img{
+    margin: 0px;
+    width: 100%;
+  }
   
   #banner{
       background-color: yellow;
