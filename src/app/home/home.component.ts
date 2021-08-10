@@ -1,4 +1,4 @@
-import { Component, OnInit, HostListener, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, HostListener   } from '@angular/core';
 import { ContentsService } from '../contents.service';
 import  AOS  from "aos";
 

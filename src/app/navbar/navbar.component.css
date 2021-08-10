@@ -1,14 +1,13 @@
 .navbar{
     z-index: 10;
     height: 10vh;
-    background: rgb(144, 144, 144) !important;
-}
+  /*  background: rgb(9,9,121) !important;
+    background: linear-gradient(90deg, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 50%, rgba(9,9,121,1) 100%) !important;
+*/}
 
 .navbar-brand{
-    font-weight: 800;
-    font-size: 3em;
-    color: rgb(2, 0, 112);
-    padding: 10px;
+    margin-top:0px;
+    padding: 10px
 }
 
 .nav-item{
@@ -19,12 +18,11 @@
 }
 
 
-
 @media only screen and (max-width:576px) {
     
     .navbar-collapse{
         z-index: 20;
-        background: rgb(255, 255, 255);
+        background: rgb(68, 68, 68);
     }
     .navbar-brand{
         font-size: 2em; 
@@ -34,7 +32,7 @@
 @media only screen and (min-width:577px) and (max-width:992px){
     .navbar-collapse{
         z-index: 20;
-        background: rgb(255, 255, 255);
+        background: rgb(68, 68, 68);
     }
     .navbar-brand{
         font-size: 2em; 

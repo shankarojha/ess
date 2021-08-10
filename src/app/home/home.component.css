@@ -36,8 +36,8 @@ h2{
 
 .navbarFixed{
     position: fixed;
-    z-index: 20;
     width: 100%;
+    z-index: 20;
 }
 
 
@@ -58,10 +58,6 @@ h2{
 #form-col{
     background:black;
     color:white;
-}
-
-.fa-car{
-    color: blanchedalmond;
 }
 
 .form-group{
@@ -93,6 +89,11 @@ h2{
     .form-group{
         font-size: 1em;
     }
+    .navbarFixed{
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
   }
 
 @media only screen and (min-width:577px) and (max-width:992px){
@@ -112,5 +113,10 @@ h2{
     }
     .form-group{
         font-size: 1em;
+    }
+    .navbarFixed{
+        position: fixed;
+        width: 100%;
+        z-index: 20;
     }
 }

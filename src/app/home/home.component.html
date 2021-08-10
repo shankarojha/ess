@@ -1,8 +1,8 @@
 
   
-    <nav *ngIf="navFix" class="navbarFixed">
+    <header *ngIf="navFix" class="navbarFixed">
       <app-navbar></app-navbar>
-    </nav>
+    </header>
   
 
 <body>
@@ -127,7 +127,7 @@
   <!--banner-->
   <div class="container-fluid" id="whoweare">
     <div class="row">
-      <div *ngFor="let item of whoWeAre" class="col-md-3 text-center">
+      <div *ngFor="let item of whoWeAre" class="col-md-3 text-center pt-4 pb-4">
         <img src="../../assets/{{ item.iconSrc }}" />
         <h2>{{ item.type }}</h2>
         <h1
@@ -173,7 +173,7 @@
 
   <!--carousel cards-->
   <section id="testimonials">
-    <div class="container" style="padding: 100px 0 100px 0">
+    <div class="container pt-5 pb-5">
       <div class="row">
         <div class="col-12">
           <h2 class="mb-3">Testimonials</h2>
