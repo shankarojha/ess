@@ -1,6 +1,7 @@
 .navbar{
     z-index: 10;
     height: 10vh;
+    background: rgb(144, 144, 144) !important;
 }
 
 .navbar-brand{
@@ -22,21 +23,21 @@
 @media only screen and (max-width:576px) {
     
     .navbar-collapse{
-        background: rgb(155, 219, 248);
+        z-index: 20;
+        background: rgb(255, 255, 255);
     }
     .navbar-brand{
         font-size: 2em; 
     }
   }
 
-@media only screen and (min-width:577px) and (max-width:768px){
+@media only screen and (min-width:577px) and (max-width:992px){
     .navbar-collapse{
-        background: rgb(155, 219, 248);
+        z-index: 20;
+        background: rgb(255, 255, 255);
     }
     .navbar-brand{
         font-size: 2em; 
     }
-    .navbar{
-        padding: 40px 0 0 0;
-    }
+    
 }

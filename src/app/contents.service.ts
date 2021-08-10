@@ -11,22 +11,22 @@ export class ContentsService {
       {
         type: 'Sites',
         projectedNumber:300,
-        iconSrc : "../../assets/icons8-location-80.png"
+        iconSrc : "location.png"
         },
       {
         type: 'Clients',
         projectedNumber:500,
-        iconSrc : "../../assets/icons8-business-building-80.png"
+        iconSrc : "clients.png"
         },
       {
         type: 'Branches',
         projectedNumber:700,
-        iconSrc : "../../assets/icons8-merge-git-80.png"
+        iconSrc : "branch.png"
         },
       {
         type: 'Employees',
         projectedNumber:900,
-        iconSrc : "../../assets//icons8-police-officer-80.png"
+        iconSrc : "employee.png"
       },
     ];
     return whoWeAre;
@@ -59,22 +59,22 @@ export class ContentsService {
       {
         service:"Integrated Security",
         details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus.",
-        icon:"../../assets/icons8-delete-shield.gif"
+        icon:"icons8-delete-shield.gif"
        },
        {
         service:"Facility Management",
         details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus.",
-        icon:"../../assets/icons8-vacuuming-100.png"
+        icon:"icons8-vacuuming-100.png"
        },
        {
         service:"Supply Chain",
         details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus.",
-        icon:"../../assets/icons8-truck-weight-max-loading-100.png"
+        icon:"icons8-truck-weight-max-loading-100.png"
        },
        {
         service:"Training",
         details:"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore magni, consectetur vero sint facilis ratione, corrupti quis reprehenderit, dolorem quibusdam modi iste dolores magnam officiis! Saepe unde beatae ea minus.",
-        icon:"../../assets/icons8-training-100.png"
+        icon:"icons8-training-100.png"
        }
     ]
     return services
