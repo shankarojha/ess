@@ -1,46 +1,42 @@
 <header>
-    <div class="container-fluid px-0">
-        <div class="row">
-            <div class="col-12">
-                <nav id="navbarBottom">
-                    <app-navbar></app-navbar>
-                </nav>
-            </div>
-        </div>
-    </div>
+  <app-navbar></app-navbar>
 </header>
 
 <body>
-    <div class="container-fluid d-flex align-items-center justify-content-center" id="banner">
-        <div class="row">
-            <div class="col-12">
-                Facility Management
-            </div>
-        </div>
+  <div
+    class="container-fluid d-flex align-items-center justify-content-center"
+    id="banner"
+  >
+    <div class="row">
+      <div class="col-12">Facility Management</div>
     </div>
-    <div class="container mt-5">
+  </div>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12 col-md-12">
         <div class="row">
-            <div class="col-12 col-md-12">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <img src="../../../assets/icons8-delete-shield.gif">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-12 pt-5">
-                        <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
-                        the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book. It has survived not only five centuries,
-                        but also the leap into electronic typesetting, remaining essentially unchanged. It was
-                        popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                        and more recently with desktop publishing software like Aldus PageMaker including versions of
-                        Lorem Ipsum.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <!--
+          <div class="col-12 text-center">
+            <img src="../../../assets/icons8-delete-shield.gif" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 pt-5">
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged. It was
+              popularised in the 1960s with the release of Letraset sheets
+              containing Lorem Ipsum passages, and more recently with desktop
+              publishing software like Aldus PageMaker including versions of
+              Lorem Ipsum.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--
             <div class="d-none d-md-block col-md-3 text-center">
                 <div *ngFor="let item of ourServices">
                     <a routerLink="/services/{{ item.service | removespace }}" class="card-title">
@@ -50,6 +46,6 @@
                 </div>
             </div>
             -->
-        </div>
     </div>
+  </div>
 </body>

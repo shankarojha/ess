@@ -6,6 +6,11 @@
   p {
     font-size: 1.5em;
   }
+
+  .row{
+    margin:0px;
+    padding: 0px;
+  }
   
   
   #banner{
